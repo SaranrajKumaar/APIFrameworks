@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.Options.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 24.49 s <<< FAILURE! -- in cucumber.Options.TestRunner
+Valiadting place API's.Verify if Delete Place functionality is working -- Time elapsed: 1.566 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.path.json.JsonPath.get(String)" is null
+	at Resources.Utils.getJsonPath(Utils.java:59)
+	at stepDefinition.stepDefinition.in_response_body_is(stepDefinition.java:74)
+	at ✽."Status" in response body is "OK"(file:///C:/REST%20API/Basic/APIframework/src/test/java/features/placeValidation.feature:42)
+
